@@ -7,7 +7,7 @@ This repository contains a password generator as requested by the client.
 
 See updates of Horiseon website [here!](https://emilyrh1058.github.io/password-generator/)
 
-<img src="C:\Users\emily\OneDrive\Desktop\bootcamp\projects\password-generator\Develop">
+![Password Generator Image](Develop\PW-Gen-Snip.JPG)
 
 
 ## Client Request
