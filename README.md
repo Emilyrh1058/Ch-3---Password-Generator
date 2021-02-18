@@ -8,7 +8,7 @@ This repository contains a password generator as requested by the client.
 
 
 ## Link to the Deployed Application
-
+https://emilyrh1058.github.io/password-generator/
 
 ## Client Request
 AS AN employee with access to sensitive data
