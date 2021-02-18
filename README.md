@@ -4,8 +4,7 @@
 This repository contains a password generator as requested by the client.
 
 ## Password Generator
-![Image of Password Generator](.\projects\password-generator\Develop)
-
+![Image of Password Generator](
 
 ## Languages Used
 * HTML 
@@ -24,3 +23,4 @@ This allows users to do the following:
 Emilyrh1058@gmail.com
 
 ## Link To Deployed Application 
+https://emilyrh1058.github.io/password-generator/.
