@@ -1,4 +1,4 @@
-var upperCase = [ 
+var upperCaseList = [ 
   'A',
   'B',
   'C',
@@ -27,7 +27,7 @@ var upperCase = [
   'Z',
 ];
 
-var lowerCase = [
+var lowerCaseList = [
   'a',
   'b',
   'c',
@@ -56,9 +56,9 @@ var lowerCase = [
   'z',
 ];
  
-var numbers = ['0','1','2','3','4','5','6','7','8','9']
+var numbersList = ['0','1','2','3','4','5','6','7','8','9'];
 
-var specialCharacters = ['!','#','$','%','&','(',')','*','+',',','-','./:;','<','=','>','?','@','[',']','^','_','`','{','|','}','~']
+var specialCharactersList = ['!','#','$','%','&','(',')','*','+',',','-','.','/',':',';','<','=','>','?','@','[',']','^','_','`','{','|','}','~'];
 
 
 // PASSWORD GENERATOR QUESTIONS
@@ -72,47 +72,44 @@ var specialCharacters = ['!','#','$','%','&','(',')','*','+',',','-','./:;','<',
     else {
 
   // LETTER CASE OPTION
-    upperCase = confirm ("Do you want to include uppercase letters? Please select OK for 'Yes' or Cancel for 'No'")
+    var upperCase = confirm ("Do you want to include uppercase letters? Please select OK for 'Yes' or Cancel for 'No'")
       console.log (upperCase);
 
-    lowerCase = confirm ("Do you want to include lowerrcase letters? Please select OK for 'Yes' or Cancel for 'No'")
+    var lowerCase = confirm ("Do you want to include lowerrcase letters? Please select OK for 'Yes' or Cancel for 'No'")
       console.log (lowerCase);
 
   // NUMBER OPTION
-    numbers = confirm ("Do you want to include numbers? Please select OK for 'Yes' or Cancel for 'No'")
+    var numbers = confirm ("Do you want to include numbers? Please select OK for 'Yes' or Cancel for 'No'")
       console.log (numbers)
 
   // SPECIAL CHARACTERS OPTION
-    specialCharacters = confirm ("Do you want to include special characters? Please select OK for 'Yes' or Cancel for 'No'")
+    var specialCharacters = confirm ("Do you want to include special characters? Please select OK for 'Yes' or Cancel for 'No'")
       console.log (specialCharacters);
   };  
 
   // CONCATINATION 
   var possiblePasswordArray = []
-  var passwordArray = []
 
   if (upperCase) {
-    possiblePasswordArray = possiblePasswordArray.concat (upperCase);
+    possiblePasswordArray = possiblePasswordArray.concat (upperCaseList);
   }
   
   if (lowerCase) {
-    possiblePasswordArray = possiblePasswordArray.concat (lowerCase);
+    possiblePasswordArray = possiblePasswordArray.concat (lowerCaseList);
   }
 
   if (numbers) {
-    possiblePasswordArray = possiblePasswordArray.concat (numbers);
+    possiblePasswordArray = possiblePasswordArray.concat (numbersList);
   }
 
   if (specialCharacters) {
-    possiblePasswordArray = possiblePasswordArray.concat (specialCharacters)
+    possiblePasswordArray = possiblePasswordArray.concat (specialCharactersList)
   }
 
   // FOR LOOP
   var password = ""
-
   for (var i = 0; i < length; i++) {
-  password += (possiblePasswordArray[Math.floor (Math.random() * possiblePasswordArray.length)]);
-    console.log (passwordArray);
+    password += (possiblePasswordArray[Math.floor (Math.random() * possiblePasswordArray.length)]);
   };
 
   return password;
@@ -126,8 +123,8 @@ function writePassword() {
   passwordText.value = password;
 };
 
-// Get references to the #generate element
+// GET REFERENCE O THE #generate ELEMENT
 var generateBtn = document.querySelector("#generate");
 
-// Event listener to generate button
+// EVENT LISTENER TO GENERATE BUTTON
 generateBtn.addEventListener("click", writePassword);
