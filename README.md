@@ -4,7 +4,7 @@
 This repository contains a password generator as requested by the client.
 
 ## Password Generator
-![Password Generator Image](Develop\assets\images\PW-Gen-Snip.JPG)
+![Password Generator Image](https://github.com/Emilyrh1058/password-generator/blob/main/Develop/assets/images/PW-Gen-Snip.JPG)
 
 
 ## Client Request
