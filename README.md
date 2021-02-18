@@ -7,6 +7,9 @@ This repository contains a password generator as requested by the client.
 ![Password Generator Image](https://github.com/Emilyrh1058/password-generator/blob/main/Develop/assets/images/PW-Gen-Snip.JPG)
 
 
+## Link to the Deployed Application
+https://emilyrh1058.github.io/password-generator/
+
 ## Client Request
 AS AN employee with access to sensitive data
 I WANT to randomly generate a password that meets certain criteria
