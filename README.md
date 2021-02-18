@@ -1,6 +1,5 @@
 # Password Generator 
 
-
 ## This Repository
 This repository contains a password generator as requested by the client.
 
